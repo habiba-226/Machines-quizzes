@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-image: url('generator/3409297.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Make the image cover the entire page */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; 
+}
+
+header {
+  background-color: #0073e6;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 1rem; /* Adjust gap between video and text */
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(104, 153, 196);
+}
+
+.video {
+  flex: 0 0 27%; /* Fix video container width to 40% */
+}
+
+video {
+  width: 100%; /* Scale video to fit its container */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  flex: 1; 
+  max-width: 80%; 
+  margin: 1rem;
+}
+
+.text h1 {
+  color: #ffffff;
+  font-style: italic;
+}
+
+.text h3{
+  margin: 0.5rem;
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+button {
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+.question {
+  margin-bottom: 1rem;
+}
+
+.question p {
+  margin: 0.5rem 0;
+}
+ 
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
