@@ -20,7 +20,7 @@ function handleQuizSubmit(quizFormId, resultId, tryAgainBtnId, answers) {
       const correctAnswer = answers[q];
 
       if (userAnswer) {
-        if (userAnswer.value === correctAnswer) {
+        if (userAnswer.value === String(correctAnswer)) {
           resultHTML += `<p class="correct">Question ${q.charAt(1)}: Correct! You got it right.</p>`;
         } else {
           resultHTML += `<p class="incorrect">Question ${q.charAt(1)}: Incorrect. The correct answer is ${correctAnswer}.</p>`;
@@ -54,14 +54,16 @@ function handleQuizSubmit(quizFormId, resultId, tryAgainBtnId, answers) {
   });
 }
 
-// Call the handleQuizSubmit function for quiz 1
-handleQuizSubmit('quiz-form-1', 'result-1', 'try-again-1', {
-  q1: 'true',
-  q2: 'false',
-  q3: 'false'
-})
-handleQuizSubmit('quiz-form-2', 'result-2', 'try-again-2', {
-  q1: 'true',
-  q2: 'false',
-  q3: 'true'
+document.addEventListener('DOMContentLoaded', () => {
+  handleQuizSubmit('quiz-form-1', 'result-1', 'try-again-1', {
+    q1: 'true',
+    q2: 'false',
+    q3: 'false',
+  });
+
+  handleQuizSubmit('quiz-form-2', 'result-2', 'try-again-2', {
+    q1: 'true', 
+    q2: 'false', 
+    q3: 'true', 
+  });
 });
