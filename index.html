@@ -21,7 +21,7 @@
         <section class="content">
           <div class="video">
             <video id="video1" width="100%" controls>
-                <source src="dcgenerator/DC Generator.mp4" type="video/mp4">
+                <source src="media/DC Generator.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
           </div>
@@ -93,9 +93,50 @@
 
           <div class="video">
             <video id="video2" width="100%" controls>
-                <source src="dcmotor\DC Motor.mp4" type="video/mp4">
+                <source src="media\DC Motor.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+          </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="content">
+          <div class="video">
+            <video id="video3" width="100%" controls>
+                <source src="media\transformar.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="text">
+            <h1>Transformers</h1>
+            <h2>Test Your Knowledge</h2>
+            <h3>Before starting the quiz, please watch the short video</h3>
+            <button onclick="playVideo('video1')">Play Video</button>
+            <form id="quiz-form-3">
+              <div class="question">
+                <p>1. A single-phase transformer has one primary and one secondary winding.</p>
+                <label><input type="radio" name="q1" value="true"> True</label>
+                <label><input type="radio" name="q1" value="false"> False</label>
+              </div>
+
+              <div class="question">
+                <p>2. The core type transformer has windings surrounding the core, while the shell type has the core surrounding the windings.</p>
+                <label><input type="radio" name="q2" value="true"> True</label>
+                <label><input type="radio" name="q2" value="false"> False</label>
+              </div>
+
+              <div class="question">
+                <p>3. Three-phase transformers are less efficient for high-power systems.</p>
+                <label><input type="radio" name="q3" value="true"> True</label>
+                <label><input type="radio" name="q3" value="false"> False</label>
+              </div>
+
+              <button type="submit">Submit Answers</button>
+            </form>
+
+            <div id="result-3"></div>
+            <button id="try-again-3" class="hidden">Try Again</button>
           </div>
         </section>
     </main>

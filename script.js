@@ -66,4 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
     q2: 'false', 
     q3: 'true', 
   });
+
+  handleQuizSubmit('quiz-form-3', 'result-3', 'try-again-3', {
+    q1: 'true', 
+    q2: 'true', 
+    q3: 'false', 
+  });
 });
