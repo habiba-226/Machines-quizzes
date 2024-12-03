@@ -180,6 +180,47 @@
             </video>
           </div>
         </section>
+
+        <!-- Section 5 -->
+        <section class="content">
+          <div class="video">
+            <video id="video5" width="100%" controls>
+                <source src="media\3-Phase Induction Motors.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="text">
+            <h1>Transformers</h1>
+            <h2>Test Your Knowledge</h2>
+            <h3>Before starting the quiz, please watch the short video</h3>
+            <button onclick="playVideo('video5')">Play Video</button>
+            <form id="quiz-form-5">
+              <div class="question">
+                <p>1. A 3-phase induction motor does not require external excitation to produce a magnetic field.</p>
+                <label><input type="radio" name="q1" value="true"> True</label>
+                <label><input type="radio" name="q1" value="false"> False</label>
+              </div>
+
+              <div class="question">
+                <p>2. The speed of the rotor in a 3-phase induction motor always matches the speed of the magnetic field.</p>
+                <label><input type="radio" name="q2" value="true"> True</label>
+                <label><input type="radio" name="q2" value="false"> False</label>
+              </div>
+
+              <div class="question">
+                <p>3. Swapping any two-phase supply lines will reverse the rotation direction of a 3-phase motor.</p>
+                <label><input type="radio" name="q3" value="true"> True</label>
+                <label><input type="radio" name="q3" value="false"> False</label>
+              </div>
+
+              <button type="submit">Submit Answers</button>
+            </form>
+
+            <div id="result-5"></div>
+            <button id="try-again-5" class="hidden">Try Again</button>
+          </div>
+        </section>
     </main>
 
     <footer>
