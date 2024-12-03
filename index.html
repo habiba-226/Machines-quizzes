@@ -139,6 +139,47 @@
             <button id="try-again-3" class="hidden">Try Again</button>
           </div>
         </section>
+
+        <!-- Section 4 -->
+        <section class="content">
+          <div class="text">
+            <h1>3-Phase Generator</h1>
+            <h2>Test Your Knowledge</h2>
+            <h3>Before starting the quiz, please watch the short video</h3>
+            <button onclick="playVideo('video4')">Play Video</button>
+            <form id="quiz-form-4">
+              <div class="question">
+                <p>1. Parallel operation of generators is only used for large-scale national power grids.</p>
+                <label><input type="radio" name="q1" value="true"> True</label>
+                <label><input type="radio" name="q1" value="false"> False</label>
+              </div>
+
+              <div class="question">
+                <p>2.  Synchronization requires the generators to have the same frequency and phase</p>
+                <label><input type="radio" name="q2" value="true"> True</label>
+                <label><input type="radio" name="q2" value="false"> False</label>
+              </div>
+
+              <div class="question">
+                <p>3. Digital synchronizers are outdated and not commonly used in modern generator synchronization.</p>
+                <label><input type="radio" name="q3" value="true"> True</label>
+                <label><input type="radio" name="q3" value="false"> False</label>
+              </div>
+
+              <button type="submit">Submit Answers</button>
+            </form>
+
+            <div id="result-4"></div>
+            <button id="try-again-4" class="hidden">Try Again</button>
+          </div>
+
+          <div class="video">
+            <video id="video4" width="100%" controls>
+                <source src="media\3-Phase.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
     </main>
 
     <footer>
